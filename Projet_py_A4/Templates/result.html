@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .navbar-text h1 {
+        color: #fff;
+        font-size: 40px;
+        align-content: center;
+    }
+    
+    body {
+        background-color: grey;
+    }
+    
+    
+    
+</style>
+
+
+
+<head>
+    <title> Online Shoppers Purchasing Intention</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-dark">
+        <span class="navbar-text">
+            <h1>Result</h1>
+        </span>
+    </nav>
+	{%block content%}
+		
+		{%block page_content%}
+			<h2> The customer intention to spend money is : {{pred}}</h2>
+		{%endblock%}
+	{%endblock%}
+
+</body>
+
+</html>
